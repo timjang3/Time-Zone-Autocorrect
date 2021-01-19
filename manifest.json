@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Time Zone AutoCorrect",
+    "version": "1.0",
+    "description": "Match all listed times on the webpage with your timezone",
+
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "Daily TyperN.png"
+    },
+
+    "permissions":[
+    ],
+
+    "content_scripts": [
+        {
+            "matches":["http://*/*", "https://*/*"],
+            "js": ["contentScript.js"]
+        }
+    ]
+}
